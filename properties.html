@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immobilien - Salford & Co. Property AG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo-link">
+                    <img src="Salford-Logo.png" alt="Salford & Co. Property AG Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="properties.html">Immobiliensuche</a></li>
+                    <li><a href="sell.html">Verkaufen</a></li>
+                    <li><a href="offices.html">Büro & Team</a></li>
+                    <li><a href="careers.html">Karriere</a></li>
+                    <li><a href="services.html">Dienstleistungen</a></li>
+                    <li><a href="contact.html" class="cta-button contact-button">Kontakt</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu-icon" aria-label="Menü öffnen" id="burgerIcon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav-overlay" id="navOverlay">
+        <div class="overlay-content">
+            <div class="overlay-column">
+                <h3>Immobilien</h3>
+                <ul>
+                    <li><a href="properties.html">Immobiliensuche</a></li>
+                    <li><a href="sell.html">Verkaufen</a></li>
+                    <li><a href="#">Nachhaltigkeit</a></li>
+                    <li><a href="#">Finanzierung</a></li>
+                    <li><a href="#">Bewertung</a></li>
+                    <li><a href="#">Suchen</a></li>
+                    <li><a href="#">Wissen</a></li>
+                </ul>
+            </div>
+            <div class="overlay-column">
+                <h3>Büro & Team</h3>
+                <ul>
+                    <li><a href="#">Persönlich für Sie da</a></li>
+                    <li><a href="#">Professionelle Bewertung</a></li>
+                </ul>
+            </div>
+            <div class="overlay-column">
+                <h3>Karriere</h3>
+                <ul>
+                    <li><a href="#">Eigenen Standort eröffnen</a></li>
+                    <li><a href="#">Immobilienmakler/-in werden</a></li>
+                    <li><a href="#">RE/MAX Academy</a></li>
+                    <li><a href="#">Stellenangebote</a></li>
+                </ul>
+            </div>
+            <div class="overlay-column">
+                <h3>Über Salford & Co.</h3>
+                <ul>
+                    <li><a href="about.html">Vision & Leitbild</a></li>
+                    <li><a href="#">Marken von RE/MAX</a></li>
+                    <li><a href="#">Netzwerk</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="close-btn" aria-label="Menü schließen" id="closeButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+    </nav>
+
+
+<section class="content-section" style="padding-top: 150px;">
+    <div class="container">
+        <h2 class="section-heading">Immobilien finden</h2>
+        <div class="filter-calculator-grid">
+            <div class="animated-box filter-box">
+                <h3>Filter</h3>
+                <div class="filter-group">
+                    <label for="price-range">Preis:</label>
+                    <select id="price-range" class="filter-dropdown">
+                        <option value="all">Alle Preise</option>
+                        <option value="1000000">bis CHF 1 Mio.</option>
+                        <option value="1500000">bis CHF 1,5 Mio.</option>
+                        <option value="2000000">bis CHF 2 Mio.</option>
+                        <option value="3000000">bis CHF 3 Mio.</option>
+                        <option value="4000000">bis CHF 4 Mio.</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rooms">Zimmer:</label>
+                    <select id="rooms" class="filter-dropdown">
+                        <option value="all">Alle Zimmer</option>
+                        <option value="3.5">Ab 3.5 Zimmer</option>
+                        <option value="4.5">Ab 4.5 Zimmer</option>
+                        <option value="5.5">Ab 5.5 Zimmer</option>
+                        <option value="6.5">Ab 6.5 Zimmer</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="location">Standort:</label>
+                    <select id="location" class="filter-dropdown">
+                        <option value="all">Alle Standorte</option>
+                        <option value="Zürich">Zürich</option>
+                        <option value="Luzern">Luzern</option>
+                        <option value="Zug">Zug</option>
+                        <option value="Genf">Genf</option>
+                        <option value="Bern">Bern</option>
+                        <option value="Graubünden">Graubünden</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-by">Sortieren nach:</label>
+                    <select id="sort-by" class="filter-dropdown">
+                        <option value="default">Standard</option>
+                        <option value="price_asc">Preis (aufsteigend)</option>
+                        <option value="price_desc">Preis (absteigend)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="animated-box calculator-box">
+                <h3>Hypothekenrechner</h3>
+                <div class="calc-group">
+                    <label for="purchase-price">Kaufpreis (CHF)</label>
+                    <input type="number" id="purchase-price" value="1500000">
+                </div>
+                <div class="calc-group">
+                    <label for="down-payment">Eigenkapital (%)</label>
+                    <input type="number" id="down-payment" value="20">
+                </div>
+                <div class="calc-group">
+                    <label for="interest-rate">Zinssatz (%)</label>
+                    <input type="number" id="interest-rate" value="3.5" step="0.1">
+                </div>
+                <div class="calc-group">
+                    <label for="amortization">Amortisation (Jahre)</label>
+                    <input type="number" id="amortization" value="25">
+                </div>
+                <div class="result-box">
+                    <h4>Geschätzte monatliche Rate</h4>
+                    <p id="monthly-payment">CHF 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section property-gallery">
+    <div class="container">
+        <div class="gallery-grid">
+        </div>
+    </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+    <span class="close-btn">×</span>
+    <img id="lightbox-image" src="" alt="Vollbildansicht">
+</div>
+
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Ihr Weg zum neuen Zuhause</h2>
+        <a href="contact.html" class="cta-button white-button">Unverbindlich anfragen</a>
+    </div>
+</section>
+
+<footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <a href="index.html" class="footer-logo">Salford & Co. Property AG</a>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="properties.html">Immobilien</a></li>
+                        <li><a href="sell.html">Verkaufen</a></li>
+                        <li><a href="offices.html">Büro & Team</a></li>
+                        <li><a href="careers.html">Karriere</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Salford & Co. Property AG. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+<script src="properties.js"></script>
+</body>
+</html>
